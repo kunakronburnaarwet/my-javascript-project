@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Creating JavaScript Objects</h1>
+<h2>Using an Object Literal</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object:
+const person = [{
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+},{
+  firstName: "kunakron",
+  lastName: "burnaarwet",
+  age: 21,
+  eyeColor: "black"
+}];
+
+ 
+
+
+// Display Data from the Object:
+//document.getElementById("demo").innerHTML =person.firstName + " is " + person.age + " years old.";
+person[1]["age"] = 25;
+document.getElementById("demo").innerHTML =person[1]["age"];
+
+</script>
+
+</body>
+</html>

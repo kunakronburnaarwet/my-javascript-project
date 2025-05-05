@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Display Properties</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<!-- <script> -->
+<!-- // // Create an Object
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+//   height: 178
+// };
+// const BAS = {
+//   name: "BAS",
+//   age: 21,
+//   city: "Thailand",
+//   height: 171
+// };
+
+// // Build a Text
+// let text = "";
+// let str = "";
+// for (let x in person) {
+//   text += person[x] + " ";
+//   str += x + " "; 
+// };
+// text +="<br>"
+// for (let y in BAS) {
+//   text +=  BAS[y] + " " ;
+//   str += y + " ";
+// };
+
+// // Display the Text
+// document.getElementById("demo").innerHTML = text;
+// document.getElementById("demo1").innerHTML = str;
+// </script> -->
+<script>
+        // Create an Object
+        const person1 = [{
+          name: "John",
+          age: 30,
+          city: "New York",
+          height: 178
+        },{
+          name: "BAS",
+          age: 21,
+          city: "Chonburi",
+          height: 171
+        },{
+          name: "kdskdskds",
+          age: 1,
+          city: "thailand",
+          height: 171
+        }];
+        
+        const myArray1 = Object.values(person1);
+        myArray2 = "";
+        // myArray2 += Object.values(person1[0]);
+        // myArray2 += Object.values(person1[1]);
+        // myArray2 += Object.values(person1[2]);
+        
+        for( let x in person1)
+         myArray2 += Object.values(person1[x]);
+         
+        
+        // Display the Text
+        //document.getElementById("demo1").innerHTML =typeof myArray1;
+        //document.getElementById("demo2").innerHTML =typeof myArray2;
+        document.getElementById("demo1").innerHTML = myArray1;
+        document.getElementById("demo2").innerHTML = myArray2;
+       </script>
+
+
+</body>
+</html>

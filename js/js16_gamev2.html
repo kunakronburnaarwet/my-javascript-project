@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Game</h2>
+
+<p>0:ค้อน</p>
+<p>1:กรรไกร</p>
+<p>2:กระดาษ/p>
+<input id="me" />
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+        function myFunction() {
+   let Me = document.getElementById("me").value;
+  let com = Math.floor(Math.random() * 3);
+  let ans = Me-com;
+  let result;
+  if(Me >=0 && Me <=2){
+  if (ans == 0) result = "draw";
+        else if (ans == -1 || ans == 2)result = "win";
+        else if (ans == 1 || ans == -2)result = "lose";
+  }
+  else result = "ใส่ตัวเลขให้ถูก 0-2 " ;
+  document.getElementById("demo").innerHTML = result+com;
+  
+
+  
+
+}
+</script>
+
+</body>
+</html>

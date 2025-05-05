@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Game</h2>
+
+<p>ลูกเต๋า1</p>
+<p>ลูกเต๋า2</p>
+
+<input id="B1" />
+<input id="B2" />
+<p id="demo"></p>
+<p id="demo1"></p>
+<button onclick="myFunction()">click</button>
+
+<script>
+      function myFunction() {
+        let B1 = Math.floor(Math.random() * 6)+1;
+        let B2 = Math.floor(Math.random() * 6)+1;
+
+
+  document.getElementById("demo").innerHTML = B1;
+  document.getElementById("demo1").innerHTML = B2;
+  
+
+  
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Game</h2>
+
+<p>0:ค้อน</p>
+<p>1:กรรไกร</p>
+<p>2:กระดาษ/p>
+<input id="me" />
+<p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+        function myFunction() {
+   let Me = document.getElementById("me").value;
+  let com = Math.floor(Math.random() * 3);
+  if (Me == 0 && com == 0) {
+   document.getElementById("demo").innerHTML = "draw"+ com ;
+} else if (Me  == 0  && com == 1 ) {
+        document.getElementById("demo").innerHTML = "win"+ com;
+} else if (Me  == 0  && com == 2 ) {
+        document.getElementById("demo").innerHTML = "lose"+ com;
+} else if  (Me == 1 && com == 0) {
+       document.getElementById("demo").innerHTML = "lose" + com;
+} else if (Me == 1  && com == 1 ) {
+        document.getElementById("demo").innerHTML = "draw"+ com;
+} else if (Me == 1  && com == 2 ) {
+        document.getElementById("demo").innerHTML = "win"+ com;
+} else if  (Me == 2 && com == 0) {
+ document.getElementById("demo").innerHTML = "win"+ com ;
+} else if (Me == 2  && com == 1 ) {
+        document.getElementById("demo").innerHTML = "lose"+ com;
+} else if (Me == 2  && com == 2 ) {
+        document.getElementById("demo").innerHTML = "draw"+ com;
+}  
+}
+</script>
+
+</body>
+</html>
